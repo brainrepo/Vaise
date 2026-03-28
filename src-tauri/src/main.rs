@@ -677,7 +677,7 @@ fn main() {
 
             #[cfg(target_os = "macos")]
             tray_icon
-                .set_icon_as_template(false)
+                .set_icon_as_template(true)
                 .map_err(|error| -> Box<dyn std::error::Error> { Box::new(error) })?;
 
             app.manage(TrayState { _icon: tray_icon });
