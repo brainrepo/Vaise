@@ -4,13 +4,31 @@ Vaise is a keyboard-first desktop launcher for shortcut cheat sheets, built with
 
 It behaves like a small command palette that stays out of the dock/taskbar, opens on a global shortcut, lets you fuzzy-search cheat sheets, then drill into individual commands and copy them to the clipboard.
 
+## How to Use
+
+![Vaise app screenshot](./docs/app-screenshot.svg)
+
+1. Launch Vaise.
+2. Press `Ctrl+Cmd+K` to show or hide the launcher.
+3. Type to search across cheat sheet names, tags, entry names, entry actions, aliases, and command text.
+4. Press `Enter` on a cheat sheet to open it.
+5. Type again to search entries within that sheet.
+6. Press `Enter` on an entry to copy its command text to the clipboard.
+
+Keyboard controls inside the launcher:
+
+- `ArrowDown`, `Tab`, or `Ctrl+N` moves selection down
+- `ArrowUp`, `Shift+Tab`, or `Ctrl+P` moves selection up
+- `Enter` opens a cheat sheet or copies an entry
+- `Backspace` on an empty entry query returns to the sheet list
+- `Escape` clears the current query or exits the selected sheet
+- `Ctrl+/` focuses and selects the search input
+
 ## What It Does
 
 - Opens and hides from a global shortcut: `Ctrl+Cmd+K`
 - Runs as an accessory-style desktop app with a tray icon
-- Uses a two-step search flow:
-  - search cheat sheets
-  - search entries inside the selected cheat sheet
+- Uses a two-step search flow between cheat sheets and their entries
 - Copies the selected command or command sequence to the clipboard on `Enter`
 - Seeds a user cheat sheet directory with default JSON files on first launch
 - Hides automatically when the window loses focus
@@ -105,24 +123,6 @@ The Tauri bundle config currently targets `all` and uses generated icons from:
 - [`src-tauri/icons/128x128@2x.png`](/Users/brainrepo/project/Vaise/src-tauri/icons/128x128@2x.png)
 - [`src-tauri/icons/icon.icns`](/Users/brainrepo/project/Vaise/src-tauri/icons/icon.icns)
 - [`src-tauri/icons/icon.ico`](/Users/brainrepo/project/Vaise/src-tauri/icons/icon.ico)
-
-## User Flow
-
-1. Launch Vaise.
-2. Press `Ctrl+Cmd+K` to show or hide the launcher.
-3. Type to search across cheat sheet names, tags, entry names, entry actions, aliases, and command text.
-4. Press `Enter` on a cheat sheet to open it.
-5. Type again to search entries within that sheet.
-6. Press `Enter` on an entry to copy its command text to the clipboard.
-
-Keyboard controls inside the launcher:
-
-- `ArrowDown`, `Tab`, or `Ctrl+N` moves selection down
-- `ArrowUp`, `Shift+Tab`, or `Ctrl+P` moves selection up
-- `Enter` opens a cheat sheet or copies an entry
-- `Backspace` on an empty entry query returns to the sheet list
-- `Escape` clears the current query or exits the selected sheet
-- `Ctrl+/` focuses and selects the search input
 
 ## Cheat Sheet Storage
 
