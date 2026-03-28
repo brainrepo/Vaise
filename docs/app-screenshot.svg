@@ -1,119 +1,137 @@
-<svg width="1600" height="1080" viewBox="0 0 1600 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="915" height="718" viewBox="0 0 915 718" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bg" x1="140" y1="96" x2="1460" y2="980" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#121721"/>
-      <stop offset="1" stop-color="#080B10"/>
+    <linearGradient id="bg" x1="62" y1="14" x2="872" y2="702" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6F22FF"/>
+      <stop offset="0.5" stop-color="#4C11C9"/>
+      <stop offset="1" stop-color="#8E25C4"/>
     </linearGradient>
-    <linearGradient id="panel" x1="390" y1="176" x2="1190" y2="886" gradientUnits="userSpaceOnUse">
-      <stop stop-color="rgba(22,26,34,0.96)"/>
-      <stop offset="1" stop-color="rgba(14,17,22,0.96)"/>
+    <linearGradient id="shapeA" x1="-10" y1="0" x2="298" y2="206" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#CE5FFF"/>
+      <stop offset="1" stop-color="#4E18B5"/>
     </linearGradient>
-    <filter id="shadow" x="300" y="112" width="1000" height="856" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-      <feDropShadow dx="0" dy="30" stdDeviation="36" flood-color="#000000" flood-opacity="0.38"/>
-    </filter>
-    <filter id="glass" x="0" y="0" width="1600" height="1080" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-      <feGaussianBlur stdDeviation="0.5"/>
+    <linearGradient id="shapeB" x1="632" y1="0" x2="914" y2="356" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7A2FFF"/>
+      <stop offset="1" stop-color="#3E106C"/>
+    </linearGradient>
+    <linearGradient id="shapeC" x1="0" y1="624" x2="376" y2="442" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1D155F"/>
+      <stop offset="1" stop-color="#4517A2"/>
+    </linearGradient>
+    <linearGradient id="shapeD" x1="404" y1="718" x2="914" y2="580" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7A24D6"/>
+      <stop offset="1" stop-color="#B13BC7"/>
+    </linearGradient>
+    <filter id="shadow" x="36" y="44" width="813" height="661" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="14" stdDeviation="12" flood-color="#000000" flood-opacity="0.22"/>
     </filter>
   </defs>
 
-  <rect width="1600" height="1080" fill="url(#bg)"/>
-  <g opacity="0.55">
-    <circle cx="260" cy="210" r="180" fill="#1E2635"/>
-    <circle cx="1360" cy="168" r="210" fill="#121A28"/>
-    <circle cx="1270" cy="926" r="244" fill="#101721"/>
-    <circle cx="242" cy="892" r="220" fill="#171D29"/>
-  </g>
-  <g opacity="0.18" filter="url(#glass)">
-    <path d="M0 772C245 668 457 630 662 674C911 728 1109 946 1600 870V1080H0V772Z" fill="#7C92FF"/>
-  </g>
+  <rect width="915" height="718" fill="url(#bg)"/>
+  <path d="M0 0H95L58 44L0 12V0Z" fill="#B34DFF" fill-opacity="0.4"/>
+  <path d="M740 0H915V135L865 108L815 12L740 0Z" fill="url(#shapeB)" fill-opacity="0.9"/>
+  <path d="M0 450L178 472L274 558L91 718H0V450Z" fill="url(#shapeC)" fill-opacity="0.92"/>
+  <path d="M485 718L376 623L548 574L748 574L915 642V718H485Z" fill="url(#shapeD)" fill-opacity="0.88"/>
+  <path d="M0 110L95 66L123 0H360L318 51L247 84L196 160L0 235V110Z" fill="url(#shapeA)" fill-opacity="0.35"/>
+  <path d="M624 30H720L652 110H562L624 30Z" fill="#B65BFF" fill-opacity="0.28"/>
 
   <g filter="url(#shadow)">
-    <rect x="350" y="162" width="900" height="756" rx="28" fill="#0E1116"/>
-    <rect x="350.5" y="162.5" width="899" height="755" rx="27.5" stroke="rgba(255,255,255,0.08)"/>
-    <rect x="350" y="162" width="900" height="756" rx="28" fill="url(#panel)"/>
+    <rect x="60" y="68" width="765" height="634" rx="16" fill="#151922"/>
+    <rect x="60.5" y="68.5" width="764" height="633" rx="15.5" stroke="#2A2F39"/>
   </g>
 
-  <rect x="380" y="194" width="840" height="146" rx="16" fill="rgba(255,255,255,0.02)"/>
-  <line x1="392" y1="338.5" x2="1208" y2="338.5" stroke="rgba(255,255,255,0.08)"/>
+  <circle cx="91" cy="94" r="9" fill="#7488FF"/>
+  <text x="91" y="98" text-anchor="middle" fill="#FFFFFF" font-size="10" font-family="SF Pro Display, Inter, Arial, sans-serif" font-weight="700">V</text>
+  <text x="108" y="99" fill="#B7BBC5" font-size="12" font-family="SF Pro Display, Inter, Arial, sans-serif" font-weight="600">tmux</text>
 
-  <circle cx="418" cy="232" r="14" fill="#7C92FF"/>
-  <text x="418" y="237" text-anchor="middle" fill="white" font-size="13" font-family="SF Pro Display, Inter, Arial, sans-serif" font-weight="700">V</text>
-  <text x="446" y="238" fill="rgba(237,241,247,0.88)" font-size="20" font-family="SF Pro Display, Inter, Arial, sans-serif" font-weight="600">tmux</text>
+  <rect x="762" y="81" width="42" height="21" rx="10.5" fill="#2E333D"/>
+  <text x="783" y="95" text-anchor="middle" fill="#C3C8D2" font-size="9" font-family="SF Mono, Menlo, monospace" font-weight="600">Ctrl+/</text>
 
-  <rect x="1114" y="214" width="76" height="30" rx="15" fill="rgba(255,255,255,0.08)"/>
-  <text x="1152" y="234" text-anchor="middle" fill="rgba(237,241,247,0.74)" font-size="14" font-family="SF Mono, Menlo, monospace">Ctrl+/</text>
+  <text x="82" y="142" fill="#59606D" font-size="11" font-family="SF Pro Display, Inter, Arial, sans-serif">⌕</text>
+  <rect x="98" y="117" width="2" height="33" fill="#AEB3BC"/>
+  <text x="104" y="142" fill="#5D6471" font-size="18" font-family="SF Pro Display, Inter, Arial, sans-serif" font-weight="600">tmux</text>
 
-  <text x="416" y="296" fill="rgba(237,241,247,0.38)" font-size="24" font-family="SF Pro Display, Inter, Arial, sans-serif">⌕</text>
-  <text x="452" y="296" fill="#F5F7FB" font-size="44" font-family="SF Pro Display, Inter, Arial, sans-serif" font-weight="500">pane</text>
+  <text x="79" y="175" fill="#979DA8" font-size="11" font-family="SF Pro Display, Inter, Arial, sans-serif">Inside cheat sheet</text>
+  <text x="331" y="175" fill="#979DA8" font-size="11" font-family="SF Pro Display, Inter, Arial, sans-serif">Enter open</text>
+  <text x="548" y="175" fill="#979DA8" font-size="11" font-family="SF Pro Display, Inter, Arial, sans-serif">Tab move</text>
+  <text x="757" y="175" fill="#979DA8" font-size="11" font-family="SF Pro Display, Inter, Arial, sans-serif">Esc back</text>
 
-  <text x="416" y="324" fill="rgba(237,241,247,0.62)" font-size="14" font-family="SF Pro Display, Inter, Arial, sans-serif">Inside cheat sheet</text>
-  <text x="709" y="324" fill="rgba(237,241,247,0.62)" font-size="14" font-family="SF Pro Display, Inter, Arial, sans-serif">Enter open</text>
-  <text x="814" y="324" fill="rgba(237,241,247,0.62)" font-size="14" font-family="SF Pro Display, Inter, Arial, sans-serif">Tab move</text>
-  <text x="906" y="324" fill="rgba(237,241,247,0.62)" font-size="14" font-family="SF Pro Display, Inter, Arial, sans-serif">Esc back</text>
+  <line x1="74" y1="186.5" x2="811" y2="186.5" stroke="#2D333E"/>
 
-  <text x="404" y="380" fill="rgba(237,241,247,0.62)" font-size="14" font-family="SF Pro Display, Inter, Arial, sans-serif" font-weight="600">Commands</text>
-  <text x="1116" y="380" fill="rgba(237,241,247,0.62)" font-size="14" font-family="SF Pro Display, Inter, Arial, sans-serif">10 commands</text>
+  <text x="80" y="216" fill="#A2A8B2" font-size="14" font-family="SF Pro Display, Inter, Arial, sans-serif" font-weight="600">Commands</text>
+  <text x="707" y="216" fill="#A9AFB8" font-size="14" font-family="SF Pro Display, Inter, Arial, sans-serif">29 commands</text>
 
-  <g>
-    <rect x="392" y="408" width="816" height="82" rx="14" fill="rgba(255,255,255,0.08)"/>
-    <text x="416" y="456" fill="rgba(237,241,247,0.52)" font-size="16" font-family="SF Pro Display, Inter, Arial, sans-serif">⌘</text>
-    <text x="450" y="443" fill="#F5F7FB" font-size="19" font-family="SF Pro Display, Inter, Arial, sans-serif" font-weight="600">Move Pane Left</text>
-    <text x="450" y="467" fill="rgba(237,241,247,0.62)" font-size="14" font-family="SF Pro Display, Inter, Arial, sans-serif">Focus the pane on the left</text>
-    <rect x="450" y="475" width="116" height="24" rx="6" fill="rgba(255,255,255,0.08)"/>
-    <text x="508" y="491" text-anchor="middle" fill="rgba(237,241,247,0.82)" font-size="12" font-family="SF Mono, Menlo, monospace">select-pane -L</text>
-    <rect x="1016" y="427" width="54" height="30" rx="8" fill="rgba(255,255,255,0.08)"/>
-    <rect x="1078" y="427" width="44" height="30" rx="8" fill="rgba(255,255,255,0.08)"/>
-    <rect x="1130" y="427" width="56" height="30" rx="8" fill="rgba(255,255,255,0.08)"/>
-    <text x="1043" y="447" text-anchor="middle" fill="#F5F7FB" font-size="14" font-family="SF Mono, Menlo, monospace">Ctrl</text>
-    <text x="1100" y="447" text-anchor="middle" fill="#F5F7FB" font-size="14" font-family="SF Mono, Menlo, monospace">B</text>
-    <text x="1158" y="447" text-anchor="middle" fill="#F5F7FB" font-size="14" font-family="SF Mono, Menlo, monospace">Left</text>
-  </g>
+  <rect x="73" y="226" width="734" height="72" rx="10" fill="#2A2D36"/>
+  <text x="83" y="264" fill="#7D8390" font-size="14" font-family="SF Pro Display, Inter, Arial, sans-serif">⌘</text>
+  <text x="111" y="249" fill="#F0F2F5" font-size="17" font-family="SF Pro Display, Inter, Arial, sans-serif" font-weight="700">New Session</text>
+  <text x="111" y="267" fill="#A7ADB7" font-size="12" font-family="SF Pro Display, Inter, Arial, sans-serif">Start a new tmux session</text>
+  <rect x="111" y="273" width="122" height="18" rx="6" fill="#414550"/>
+  <text x="120" y="285" fill="#D7DBE2" font-size="9" font-family="SF Mono, Menlo, monospace">tmux new-session</text>
+  <rect x="660" y="251" width="39" height="22" rx="7" fill="#383C46"/>
+  <rect x="708" y="251" width="90" height="22" rx="7" fill="#383C46"/>
+  <text x="679.5" y="266" text-anchor="middle" fill="#D6DAE0" font-size="10" font-family="SF Mono, Menlo, monospace">tmux</text>
+  <text x="753" y="266" text-anchor="middle" fill="#D6DAE0" font-size="10" font-family="SF Mono, Menlo, monospace">new-session</text>
 
-  <g opacity="0.98">
-    <rect x="392" y="498" width="816" height="82" rx="14" fill="transparent"/>
-    <text x="416" y="546" fill="rgba(237,241,247,0.52)" font-size="16" font-family="SF Pro Display, Inter, Arial, sans-serif">⌘</text>
-    <text x="450" y="533" fill="#F5F7FB" font-size="19" font-family="SF Pro Display, Inter, Arial, sans-serif" font-weight="600">Move Pane Right</text>
-    <text x="450" y="557" fill="rgba(237,241,247,0.62)" font-size="14" font-family="SF Pro Display, Inter, Arial, sans-serif">Focus the pane on the right</text>
-    <rect x="450" y="565" width="116" height="24" rx="6" fill="rgba(255,255,255,0.08)"/>
-    <text x="508" y="581" text-anchor="middle" fill="rgba(237,241,247,0.82)" font-size="12" font-family="SF Mono, Menlo, monospace">select-pane -R</text>
-    <rect x="1016" y="517" width="54" height="30" rx="8" fill="rgba(255,255,255,0.08)"/>
-    <rect x="1078" y="517" width="44" height="30" rx="8" fill="rgba(255,255,255,0.08)"/>
-    <rect x="1130" y="517" width="66" height="30" rx="8" fill="rgba(255,255,255,0.08)"/>
-    <text x="1043" y="537" text-anchor="middle" fill="#F5F7FB" font-size="14" font-family="SF Mono, Menlo, monospace">Ctrl</text>
-    <text x="1100" y="537" text-anchor="middle" fill="#F5F7FB" font-size="14" font-family="SF Mono, Menlo, monospace">B</text>
-    <text x="1163" y="537" text-anchor="middle" fill="#F5F7FB" font-size="14" font-family="SF Mono, Menlo, monospace">Right</text>
-  </g>
+  <text x="83" y="329" fill="#7D8390" font-size="14" font-family="SF Pro Display, Inter, Arial, sans-serif">⌘</text>
+  <text x="111" y="323" fill="#F0F2F5" font-size="17" font-family="SF Pro Display, Inter, Arial, sans-serif" font-weight="700">List Sessions</text>
+  <text x="111" y="341" fill="#A7ADB7" font-size="12" font-family="SF Pro Display, Inter, Arial, sans-serif">Show all tmux sessions</text>
+  <rect x="111" y="347" width="134" height="18" rx="6" fill="#383C46"/>
+  <text x="120" y="359" fill="#D7DBE2" font-size="9" font-family="SF Mono, Menlo, monospace">tmux list-sessions</text>
+  <rect x="653" y="325" width="39" height="22" rx="7" fill="#383C46"/>
+  <rect x="701" y="325" width="97" height="22" rx="7" fill="#383C46"/>
+  <text x="672.5" y="340" text-anchor="middle" fill="#D6DAE0" font-size="10" font-family="SF Mono, Menlo, monospace">tmux</text>
+  <text x="749.5" y="340" text-anchor="middle" fill="#D6DAE0" font-size="10" font-family="SF Mono, Menlo, monospace">list-sessions</text>
 
-  <g opacity="0.98">
-    <rect x="392" y="588" width="816" height="82" rx="14" fill="transparent"/>
-    <text x="416" y="636" fill="rgba(237,241,247,0.52)" font-size="16" font-family="SF Pro Display, Inter, Arial, sans-serif">⌘</text>
-    <text x="450" y="623" fill="#F5F7FB" font-size="19" font-family="SF Pro Display, Inter, Arial, sans-serif" font-weight="600">Next Pane</text>
-    <text x="450" y="647" fill="rgba(237,241,247,0.62)" font-size="14" font-family="SF Pro Display, Inter, Arial, sans-serif">Switch to the next tmux pane</text>
-    <rect x="450" y="655" width="112" height="24" rx="6" fill="rgba(255,255,255,0.08)"/>
-    <text x="506" y="671" text-anchor="middle" fill="rgba(237,241,247,0.82)" font-size="12" font-family="SF Mono, Menlo, monospace">select-pane -t :.+</text>
-    <rect x="1046" y="607" width="54" height="30" rx="8" fill="rgba(255,255,255,0.08)"/>
-    <rect x="1108" y="607" width="44" height="30" rx="8" fill="rgba(255,255,255,0.08)"/>
-    <rect x="1160" y="607" width="38" height="30" rx="8" fill="rgba(255,255,255,0.08)"/>
-    <text x="1073" y="627" text-anchor="middle" fill="#F5F7FB" font-size="14" font-family="SF Mono, Menlo, monospace">Ctrl</text>
-    <text x="1130" y="627" text-anchor="middle" fill="#F5F7FB" font-size="14" font-family="SF Mono, Menlo, monospace">B</text>
-    <text x="1179" y="627" text-anchor="middle" fill="#F5F7FB" font-size="14" font-family="SF Mono, Menlo, monospace">o</text>
-  </g>
+  <text x="83" y="415" fill="#7D8390" font-size="14" font-family="SF Pro Display, Inter, Arial, sans-serif">⌘</text>
+  <text x="111" y="397" fill="#F0F2F5" font-size="17" font-family="SF Pro Display, Inter, Arial, sans-serif" font-weight="700">Attach Session</text>
+  <text x="111" y="415" fill="#A7ADB7" font-size="12" font-family="SF Pro Display, Inter, Arial, sans-serif">Attach to the last or named tmux session</text>
+  <rect x="111" y="421" width="213" height="18" rx="6" fill="#383C46"/>
+  <text x="120" y="433" fill="#D7DBE2" font-size="9" font-family="SF Mono, Menlo, monospace">tmux attach-session -t &lt;name&gt;</text>
+  <rect x="545" y="399" width="39" height="22" rx="7" fill="#383C46"/>
+  <rect x="593" y="399" width="110" height="22" rx="7" fill="#383C46"/>
+  <rect x="709" y="399" width="28" height="22" rx="7" fill="#383C46"/>
+  <rect x="743" y="399" width="56" height="22" rx="7" fill="#383C46"/>
+  <text x="564.5" y="414" text-anchor="middle" fill="#D6DAE0" font-size="10" font-family="SF Mono, Menlo, monospace">tmux</text>
+  <text x="648" y="414" text-anchor="middle" fill="#D6DAE0" font-size="10" font-family="SF Mono, Menlo, monospace">attach-session</text>
+  <text x="723" y="414" text-anchor="middle" fill="#D6DAE0" font-size="10" font-family="SF Mono, Menlo, monospace">-t</text>
+  <text x="771" y="414" text-anchor="middle" fill="#D6DAE0" font-size="10" font-family="SF Mono, Menlo, monospace">&lt;name&gt;</text>
 
-  <g opacity="0.98">
-    <rect x="392" y="678" width="816" height="82" rx="14" fill="transparent"/>
-    <text x="416" y="726" fill="rgba(237,241,247,0.52)" font-size="16" font-family="SF Pro Display, Inter, Arial, sans-serif">⌘</text>
-    <text x="450" y="713" fill="#F5F7FB" font-size="19" font-family="SF Pro Display, Inter, Arial, sans-serif" font-weight="600">Toggle Pane Zoom</text>
-    <text x="450" y="737" fill="rgba(237,241,247,0.62)" font-size="14" font-family="SF Pro Display, Inter, Arial, sans-serif">Zoom or unzoom the current pane</text>
-    <rect x="450" y="745" width="104" height="24" rx="6" fill="rgba(255,255,255,0.08)"/>
-    <text x="502" y="761" text-anchor="middle" fill="rgba(237,241,247,0.82)" font-size="12" font-family="SF Mono, Menlo, monospace">resize-pane -Z</text>
-    <rect x="1046" y="697" width="54" height="30" rx="8" fill="rgba(255,255,255,0.08)"/>
-    <rect x="1108" y="697" width="44" height="30" rx="8" fill="rgba(255,255,255,0.08)"/>
-    <rect x="1160" y="697" width="38" height="30" rx="8" fill="rgba(255,255,255,0.08)"/>
-    <text x="1073" y="717" text-anchor="middle" fill="#F5F7FB" font-size="14" font-family="SF Mono, Menlo, monospace">Ctrl</text>
-    <text x="1130" y="717" text-anchor="middle" fill="#F5F7FB" font-size="14" font-family="SF Mono, Menlo, monospace">B</text>
-    <text x="1179" y="717" text-anchor="middle" fill="#F5F7FB" font-size="14" font-family="SF Mono, Menlo, monospace">z</text>
-  </g>
+  <text x="83" y="489" fill="#7D8390" font-size="14" font-family="SF Pro Display, Inter, Arial, sans-serif">⌘</text>
+  <text x="111" y="471" fill="#F0F2F5" font-size="17" font-family="SF Pro Display, Inter, Arial, sans-serif" font-weight="700">New Window</text>
+  <text x="111" y="489" fill="#A7ADB7" font-size="12" font-family="SF Pro Display, Inter, Arial, sans-serif">Create a new tmux window</text>
+  <rect x="111" y="495" width="88" height="18" rx="6" fill="#383C46"/>
+  <text x="120" y="507" fill="#D7DBE2" font-size="9" font-family="SF Mono, Menlo, monospace">new-window</text>
+  <rect x="694" y="473" width="42" height="22" rx="7" fill="#383C46"/>
+  <rect x="742" y="473" width="25" height="22" rx="7" fill="#383C46"/>
+  <rect x="773" y="473" width="25" height="22" rx="7" fill="#383C46"/>
+  <text x="715" y="488" text-anchor="middle" fill="#D6DAE0" font-size="10" font-family="SF Mono, Menlo, monospace">Ctrl</text>
+  <text x="754.5" y="488" text-anchor="middle" fill="#D6DAE0" font-size="10" font-family="SF Mono, Menlo, monospace">B</text>
+  <text x="785.5" y="488" text-anchor="middle" fill="#D6DAE0" font-size="10" font-family="SF Mono, Menlo, monospace">C</text>
 
-  <text x="392" y="860" fill="rgba(237,241,247,0.62)" font-size="14" font-family="SF Pro Display, Inter, Arial, sans-serif">~/Library/Application Support/com.vaise.app/cheatsheets</text>
-  <text x="1055" y="860" fill="rgba(237,241,247,0.62)" font-size="14" font-family="SF Pro Display, Inter, Arial, sans-serif">Ctrl+/ focus search</text>
+  <text x="83" y="563" fill="#7D8390" font-size="14" font-family="SF Pro Display, Inter, Arial, sans-serif">⌘</text>
+  <text x="111" y="545" fill="#F0F2F5" font-size="17" font-family="SF Pro Display, Inter, Arial, sans-serif" font-weight="700">Split Horizontal</text>
+  <text x="111" y="563" fill="#A7ADB7" font-size="12" font-family="SF Pro Display, Inter, Arial, sans-serif">Split the current pane horizontally</text>
+  <rect x="111" y="569" width="112" height="18" rx="6" fill="#383C46"/>
+  <text x="120" y="581" fill="#D7DBE2" font-size="9" font-family="SF Mono, Menlo, monospace">split-window -v</text>
+  <rect x="692" y="547" width="42" height="22" rx="7" fill="#383C46"/>
+  <rect x="740" y="547" width="25" height="22" rx="7" fill="#383C46"/>
+  <rect x="771" y="547" width="26" height="22" rx="7" fill="#383C46"/>
+  <text x="713" y="562" text-anchor="middle" fill="#D6DAE0" font-size="10" font-family="SF Mono, Menlo, monospace">Ctrl</text>
+  <text x="752.5" y="562" text-anchor="middle" fill="#D6DAE0" font-size="10" font-family="SF Mono, Menlo, monospace">B</text>
+  <text x="784" y="562" text-anchor="middle" fill="#D6DAE0" font-size="10" font-family="SF Mono, Menlo, monospace">&quot;</text>
+
+  <text x="83" y="637" fill="#7D8390" font-size="14" font-family="SF Pro Display, Inter, Arial, sans-serif">⌘</text>
+  <text x="111" y="619" fill="#F0F2F5" font-size="17" font-family="SF Pro Display, Inter, Arial, sans-serif" font-weight="700">Split Vertical</text>
+  <text x="111" y="637" fill="#A7ADB7" font-size="12" font-family="SF Pro Display, Inter, Arial, sans-serif">Split the current pane vertically</text>
+  <rect x="111" y="643" width="112" height="18" rx="6" fill="#383C46"/>
+  <text x="120" y="655" fill="#D7DBE2" font-size="9" font-family="SF Mono, Menlo, monospace">split-window -h</text>
+  <rect x="692" y="621" width="42" height="22" rx="7" fill="#383C46"/>
+  <rect x="740" y="621" width="25" height="22" rx="7" fill="#383C46"/>
+  <rect x="771" y="621" width="26" height="22" rx="7" fill="#383C46"/>
+  <text x="713" y="636" text-anchor="middle" fill="#D6DAE0" font-size="10" font-family="SF Mono, Menlo, monospace">Ctrl</text>
+  <text x="752.5" y="636" text-anchor="middle" fill="#D6DAE0" font-size="10" font-family="SF Mono, Menlo, monospace">B</text>
+  <text x="784" y="636" text-anchor="middle" fill="#D6DAE0" font-size="10" font-family="SF Mono, Menlo, monospace">%</text>
+
+  <line x1="74" y1="667.5" x2="811" y2="667.5" stroke="#2D333E"/>
+  <text x="80" y="687" fill="#838A96" font-size="10" font-family="SF Pro Display, Inter, Arial, sans-serif">/Users/brainrepo/Library/Application Support/com.vaise.app/cheatsheets</text>
+  <text x="704" y="687" fill="#959CA8" font-size="10" font-family="SF Pro Display, Inter, Arial, sans-serif">Ctrl+/ focus search</text>
 </svg>
