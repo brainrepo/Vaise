@@ -72,13 +72,15 @@ On macOS, the launcher is additionally configured to behave more like a utility 
 
 ## Requirements
 
-You need the usual Tauri prerequisites for your platform:
+Vaise is currently developed and packaged with a macOS-first setup.
+
+You need:
 
 - Node.js and npm
 - Rust toolchain
-- platform-native dependencies required by Tauri
+- the macOS-native dependencies required by Tauri
 
-On macOS, this repo is already configured to use `macOSPrivateApi` and tray/window features.
+This repo is configured to use `macOSPrivateApi`, tray icons, and macOS-specific launcher window behavior.
 
 ## Install
 
@@ -102,6 +104,11 @@ Useful scripts:
 - `npm run tauri:dev` runs the full desktop app
 - `npm run tauri:build` builds desktop bundles/installers
 
+Targeted macOS builds:
+
+- `npm run tauri build -- --target aarch64-apple-darwin`
+- `npm run tauri build -- --target x86_64-apple-darwin`
+
 Vite is configured with:
 
 - port `1420`
@@ -110,10 +117,17 @@ Vite is configured with:
 
 ## Build
 
-Create production bundles:
+Create a production bundle:
 
 ```bash
 npm run tauri:build
+```
+
+Build a specific macOS target:
+
+```bash
+npm run tauri build -- --target aarch64-apple-darwin
+npm run tauri build -- --target x86_64-apple-darwin
 ```
 
 The Tauri bundle config currently targets `all` and uses generated icons from:
@@ -123,6 +137,13 @@ The Tauri bundle config currently targets `all` and uses generated icons from:
 - [`src-tauri/icons/128x128@2x.png`](/Users/brainrepo/project/Vaise/src-tauri/icons/128x128@2x.png)
 - [`src-tauri/icons/icon.icns`](/Users/brainrepo/project/Vaise/src-tauri/icons/icon.icns)
 - [`src-tauri/icons/icon.ico`](/Users/brainrepo/project/Vaise/src-tauri/icons/icon.ico)
+
+## CI Builds
+
+GitHub Actions currently builds Apple desktop artifacts only:
+
+- `aarch64-apple-darwin`
+- `x86_64-apple-darwin`
 
 ## Cheat Sheet Storage
 
