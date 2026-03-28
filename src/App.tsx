@@ -8,7 +8,12 @@ import {
 } from "react";
 import appIcon from "./assets/app-icon.svg";
 import { rankItems } from "./lib/search";
-import { getSheetTags, loadCheatSheets, registerFocusListener } from "./lib/tauri";
+import {
+  getSheetTags,
+  hideCurrentWindow,
+  loadCheatSheets,
+  registerFocusListener
+} from "./lib/tauri";
 import type { CheatSheet, CheatSheetEntry } from "./lib/types";
 
 const formatCommand = (entry: CheatSheetEntry) => {
@@ -110,21 +115,6 @@ export default function App() {
   }, []);
 
   useEffect(() => {
-    const onWindowKeyDown = (event: globalThis.KeyboardEvent) => {
-      if (event.ctrlKey && event.key === "/") {
-        event.preventDefault();
-        searchInputRef.current?.focus();
-        searchInputRef.current?.select();
-      }
-    };
-
-    window.addEventListener("keydown", onWindowKeyDown);
-    return () => {
-      window.removeEventListener("keydown", onWindowKeyDown);
-    };
-  }, []);
-
-  useEffect(() => {
     setActiveIndex(0);
   }, [deferredSheetQuery, deferredEntryQuery, selectedSheet]);
 
@@ -171,6 +161,41 @@ export default function App() {
 
     await navigator.clipboard.writeText(text);
   };
+
+  const handleEscapeKey = () => {
+    if (selectedSheet) {
+      setSelectedSheet(null);
+      setEntryQuery("");
+      return;
+    }
+
+    void hideCurrentWindow();
+  };
+
+  useEffect(() => {
+    const onWindowKeyDown = (event: globalThis.KeyboardEvent) => {
+      if (event.defaultPrevented) {
+        return;
+      }
+
+      if (event.ctrlKey && event.key === "/") {
+        event.preventDefault();
+        searchInputRef.current?.focus();
+        searchInputRef.current?.select();
+        return;
+      }
+
+      if (event.key === "Escape") {
+        event.preventDefault();
+        handleEscapeKey();
+      }
+    };
+
+    window.addEventListener("keydown", onWindowKeyDown);
+    return () => {
+      window.removeEventListener("keydown", onWindowKeyDown);
+    };
+  }, [selectedSheet]);
 
   const activateCurrent = async () => {
     const current = visibleList[activeIndex]?.item;
@@ -234,12 +259,7 @@ export default function App() {
 
     if (event.key === "Escape") {
       event.preventDefault();
-      if (selectedSheet) {
-        setSelectedSheet(null);
-        setEntryQuery("");
-      } else {
-        setSheetQuery("");
-      }
+      handleEscapeKey();
     }
   };
 
@@ -282,7 +302,7 @@ export default function App() {
             <span>{selectedSheet ? "Inside cheat sheet" : "Cheat sheets"}</span>
             <span>Enter open</span>
             <span>Tab move</span>
-            <span>Esc back</span>
+            <span>{selectedSheet ? "Esc back" : "Esc close"}</span>
           </div>
         </div>
 
