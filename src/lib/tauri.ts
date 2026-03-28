@@ -331,4 +331,13 @@ export const registerFocusListener = async (callback: () => void) => {
   };
 };
 
+export const hideCurrentWindow = async () => {
+  if (!isTauriRuntime) {
+    return;
+  }
+
+  const { getCurrentWindow } = await import("@tauri-apps/api/window");
+  await getCurrentWindow().hide();
+};
+
 export const getSheetTags = (sheet: CheatSheet) => sheet.tags ?? [];
