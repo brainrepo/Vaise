@@ -6,6 +6,7 @@ import {
   useRef,
   useState
 } from "react";
+import appIcon from "./assets/app-icon.svg";
 import { rankItems } from "./lib/search";
 import { getSheetTags, loadCheatSheets, registerFocusListener } from "./lib/tauri";
 import type { CheatSheet, CheatSheetEntry } from "./lib/types";
@@ -253,7 +254,7 @@ export default function App() {
         <div className="search-shell">
           <header className="search-header">
             <div className="header-left">
-              <span className="brand-mark">V</span>
+              <img alt="Vaise" className="brand-mark" src={appIcon} />
               <span className="scope-label">{selectedSheet?.name ?? "Search"}</span>
             </div>
             <div className="header-right">
